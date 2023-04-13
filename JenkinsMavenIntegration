@@ -1,0 +1,8 @@
+Go to new item and create a freestyle project.
+select git in SOURCE CODE MANAGEMENT and give the url https://github.com/Abhinavjaiswal011/mavenwebhook.git
+now go to BUILDSTEPS and select "invoke top-level Maven tagets" and provide a goal such as install.
+Then go to Manage plugins.
+In Plugins manage go to avaibale and select maven without restart.
+Now slect global tool configurations and Maven and save it.
+Kinldy go back to your freestyle project and go to build steps and select Maven in the dropdown.
+Now click on build now and wait for it to generate BUILD SUCCESS.
