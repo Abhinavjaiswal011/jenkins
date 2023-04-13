@@ -1,0 +1,20 @@
+--config jenkins
+sudo su
+--update ubuntu packages and intalled applications
+sudo apy-get update -y
+--Install jdk
+sudo apy-get install openjdk-11-jdk -y
+java -version
+--Add gpg key for jenkins installation ( as sudo su )
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | apt-key add -
+--Add the repository address to our /etc/apt/sources.list.d file
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \ e> /etc/apt/sources.list.d/jenkins.list'
+--Update our package list again
+sudo apt-get update -y
+--Install Jenkins
+sudo apt-get install jenkins -y
+--verify installation by typing
+systemctl status jenkins
+--use the public ip to launch in web browser and to create password use
+sudo cat /var/lib/jenkins/secrets/intialAdminPassword 
+--give password and install suggested plugins.
