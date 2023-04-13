@@ -1,0 +1,6 @@
+1) Go to DASHBOARD in jenkins
+2) Click on new item 
+3) Select freestyle project and give name such as jenkinsgitintegration
+4) Then select SOURCE CODE MANAGEMENT and select git
+5) once git is slected provide the reporitory https://github.com/Abhinavjaiswal011/mavenwebhook.git
+6) then Click ok and BUILD NOW.
